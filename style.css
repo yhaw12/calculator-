@@ -1,0 +1,120 @@
+:root{
+    --color: rgb(175, 175, 171);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 9PX rgba(0, 0, 0, 0.5);
+}
+
+
+.card{
+    width: 400px;
+    height: auto;
+}
+
+.card h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.card .temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 2px solid red;
+
+}
+
+.temp .temp-input, .temp-type{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.temp label{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.temp .temp-input input{
+    font-size: 1rem;
+    padding: .7rem;
+    outline: none;
+    background: none;
+    color: var(--color);
+    margin-bottom: 1rem;
+    border-bottom: 2px
+    solid rgba(0, 0, 0, 0.3);
+}
+
+.temp .temp-type{
+    display: flex;
+    align-items: center;
+}
+
+.temp .temp-type select{
+    padding: .4rem;
+    color: var(--color);
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.temp-type option{
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card button{
+    width: 100%;
+    padding: .6rem;
+    font-size: 1.3rem;
+    color: var(--color);
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #009966;
+}
+.card .results{
+    margin: 1rem 0;
+}
+
+.results label{
+    font-size: 1.3rem;
+}
+
+.results #display{
+    padding: 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
